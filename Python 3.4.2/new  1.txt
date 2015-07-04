@@ -1,7 +1,0 @@
-Cole Dixon,BOY,27,Portland OR
-Misty Stanley,GIRL,23,Chattanooga TN
-Mariah Campbell,GIRL,23,Tigard OR
-Daniel Prewitt,BOY,25,Hillsboro OR
-Alex Hamblet,BOY,27,New York NY
-Garrett Kramer,BOY,27,San Francisco CA
-Nicole Henry,GIRL,24,Moro OR
