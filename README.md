@@ -1,7 +1,9 @@
 # Python-projects
 
-_small projects built using Python 2/3
+-- small projects built using Python2/3
 
-GUI generation/design practice
+  -- GUI generation/design
 
-SQLLite db integration practice
+  -- SQLLite db integration practice
+  
+  -- application logic (_MVC structure_)
