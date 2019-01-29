@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb156150-e9a2-496c-8058-a40725ca4ba3" name="Default" comment="" />
+    <list default="true" id="eb156150-e9a2-496c-8058-a40725ca4ba3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/wrk/Calculator(Complete).py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,23 +12,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="calc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calc_app/calc.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calc_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
                 <element signature="e#60#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Calculator(Complete).py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrk/Calculator(Complete).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1268">
+              <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+              <folding>
+                <element signature="e#26#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,14 +65,14 @@
         <option value="$PROJECT_DIR$/calc_app/Calculator(1st iteration of button events).py" />
         <option value="$PROJECT_DIR$/calc_app/app.py" />
         <option value="$PROJECT_DIR$/calc_app/calc.py" />
+        <option value="$PROJECT_DIR$/wrk/Calculator(Complete).py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="1" />
-    <option name="width" value="1533" />
-    <option name="height" value="1084" />
+    <option name="x" value="-9" />
+    <option name="width" value="1534" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -77,6 +91,11 @@
               <item name="calculator_w_gui" type="b2602c69:ProjectViewProjectNode" />
               <item name="calculator_w_gui" type="462c0819:PsiDirectoryNode" />
               <item name="calc_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calculator_w_gui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="calculator_w_gui" type="462c0819:PsiDirectoryNode" />
+              <item name="wrk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -148,31 +167,48 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="1" width="1226" height="867" extended-state="0" />
+    <frame x="-7" y="0" width="1227" height="868" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.56007755" visible="true" weight="0.28547856" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5589942" visible="true" weight="0.2852432" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5008251" side_tool="true" visible="true" weight="0.29411766" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5008251" side_tool="true" visible="true" weight="0.29371583" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917492" weight="0.29411766" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" sideWeight="0.49834985" weight="0.3297546" />
-      <window_info id="Structure" order="1" sideWeight="0.43992248" side_tool="true" visible="true" weight="0.28547856" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49834985" weight="0.2929448" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49834985" weight="0.3297546" />
+      <window_info id="Structure" order="1" sideWeight="0.4410058" side_tool="true" visible="true" weight="0.2852432" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49834985" weight="0.2929448" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/calc_app/calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calc_app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="e#60#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wrk/Calculator(1st iteration of button events).py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -190,26 +226,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calc_app/Calculator(1st iteration of button events).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="80" lean-forward="true" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/calc_app/Calculator(1st iteration of button events).py" />
     <entry file="file://$PROJECT_DIR$/calc_app/calc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calc_app/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="e#60#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrk/Calculator(Complete).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1268">
+          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+          <folding>
+            <element signature="e#26#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
