@@ -1,33 +1,39 @@
 import shutil
 import os
 
-path = 'C:\\Users\\Dell 0381\\Desktop\\A\\'
-dir = os.listdir(path)
-inputfile = 'C:\\Users\\Dell 0381\\Desktop\\B'
-filepath = []
+# A to B directory
+from_dir = os.path.join(os.environ['HOMEPATH'], 'DESKTOP', 'A')
+to_dir = os.path.join(os.environ['HOMEPATH'], 'DESKTOP', 'B')
+# get contents of directory
+dir_contents = os.listdir(from_dir)
+files = []
 
+# get files in directory / append to list
+def fileDir():
 
-def filedir():
+    for f in dir_contents:
+        files.append(f)
 
-    for f in dir:
-        filepath.append(f)
-
-    for file in filepath:
+    count = len(files)
+    print(count.__str__()+' files located at '+from_dir)
+    for file in files:
         print(file)
 
-def readfile():
+# read contents of each file
+def readFile():
 
-    for i in filepath:
-        path +i
-        f = open(path +i, 'r')
+    for i in files:
+        from_dir+i
+        f = open(from_dir+'\\'+i, 'r')
         for line in f:
-            print(line)
+            print('contents of '+i+': '+line)
 
-def copyfile():
+# copy files A to B
+def copyFile():
 
-    for i in filepath:
-        shutil.copy(path +i, inputfile)
+    for i in files:
+        shutil.copy(from_dir+'\\'+i, to_dir)
 
-filedir()
-readfile()
-copyfile()
+fileDir()
+readFile()
+copyFile()
