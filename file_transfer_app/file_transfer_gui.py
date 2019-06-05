@@ -4,10 +4,11 @@ from tkinter import messagebox as mb
 from tkinter import filedialog as fd
 import shutil, os
 import datetime, time
-import file_transfer_controller as ctrl
+# CUSTOM SCRIPTS
+from CONTROLLER import file_transfer_controller as ctrl
+from MODEL import file_transfer_data as data
 
 class FileTransfer:
-
 
     def __init__(self, master):
 
@@ -32,8 +33,6 @@ class FileTransfer:
         ttk.Label(self.header_frame, text = 'BROWSE for ROOT and DEST file locations.\n'
                                             'Apply COMMENTS as needed (or required).\n').grid(row = 1, column = 1)
 
-
-
         #CONTENT
         self.content = ttk.Frame(master)
         self.content.pack()
@@ -50,7 +49,6 @@ class FileTransfer:
         self.comments = Text(self.content, width = 50, height = 5)
         self.comments.grid(row = 4, column = 0, columnspan = 2)
 
-
         #BUTTONS
         self.browse = ttk.Button(self.content, text = 'BROWSE')
         self.browse.grid(row = 2, column = 0, sticky = 'nw', padx = 5, pady = 4)
@@ -62,44 +60,16 @@ class FileTransfer:
         self.transfer.grid(row = 5, column = 1, sticky = 'ne', padx = 84, pady = 5)
         self.cancel = ttk.Button(self.content, text = 'CANCEL', command = quit).grid(row = 5, column = 1, sticky = 'ne', pady = 5, padx = 5)
 
-
         #PROGRESS BAR
         value = IntVar()
         self.prog = ttk.Progressbar(self.content, orient = HORIZONTAL, length = 250, maximum = 50.0, value = 0)
         #self.prog.grid(row = 4, column = 1)
-
 
         #BIND EVENTS
         self.transfer.bind('<1>', lambda e: ctrl.transfer_(self))
         self.clear.bind('<1>', lambda e: ctrl.clear_(self))
         self.browse.bind('<1>', lambda e: ctrl.browseRoot_(self))
         self.browse2.bind('<1>', lambda e: ctrl.browseDest_(self))
-
-
-    #DEFINE EVENTS
-    """ def transfer_(self):
-        path = self.file_entry.get()
-        dest = self.file_dest.get()
-        shutil.copy(path, dest)
-        self.clear_()
-        mb.showinfo(title='FILE TRANSFER', message='File transferred to %s' %dest)
-
-
-    def browse_(self):
-        dirname = fd.askopenfilename()
-        self.file_entry.delete(0, 'end')
-        self.file_entry.insert(0, dirname)
-
-    def browse2_(self):
-        destname = fd.askdirectory()
-        self.file_dest.delete(0, 'end')
-        self.file_dest.insert(0, destname)
-
-
-    def clear_(self):
-        self.file_entry.delete(0,'end')
-        self.file_dest.delete(0,'end')
- """
 
 
 def main():
