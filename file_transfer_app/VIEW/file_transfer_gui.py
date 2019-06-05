@@ -70,11 +70,3 @@ class FileTransfer:
         self.clear.bind('<1>', lambda e: ctrl.clear_(self))
         self.browse.bind('<1>', lambda e: ctrl.browseRoot_(self))
         self.browse2.bind('<1>', lambda e: ctrl.browseDest_(self))
-
-
-""" def main():
-    root = Tk()
-    FT = FileTransfer(root)
-    root.mainloop()
-
-if __name__ == '__main__': main() """
