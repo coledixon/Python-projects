@@ -2,8 +2,6 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox as mb
 from tkinter import filedialog as fd
-import shutil, os
-import datetime, time
 # CUSTOM SCRIPTS
 from CONTROLLER import file_transfer_controller as ctrl
 from MODEL import file_transfer_data as data
