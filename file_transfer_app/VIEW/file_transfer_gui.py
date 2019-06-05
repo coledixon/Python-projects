@@ -72,9 +72,9 @@ class FileTransfer:
         self.browse2.bind('<1>', lambda e: ctrl.browseDest_(self))
 
 
-def main():
+""" def main():
     root = Tk()
     FT = FileTransfer(root)
     root.mainloop()
 
-if __name__ == '__main__': main()
+if __name__ == '__main__': main() """
