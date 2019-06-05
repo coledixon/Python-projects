@@ -1,4 +1,4 @@
-import sqlite3 as sql
+""" import sqlite3 as sql
    
    #DEFINE DATABASE CONNECTION
     def FileDatabase(self):
@@ -57,4 +57,4 @@ import sqlite3 as sql
 
     def lasttransfer_(self):
         timeran = time.clock()
-        print(timeran)
+        print(timeran) """

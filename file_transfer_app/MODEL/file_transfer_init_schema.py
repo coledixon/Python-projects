@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-conn = sql.connect('FileTransferRecords.db')
+conn = sql.connect('file_transfer.db')
 c = conn.cursor()
 
 def initSchema():
