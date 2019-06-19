@@ -6,8 +6,8 @@ from MODEL import file_transfer_init_schema as schema
 
 def main():
     root = Tk()
-    FT = gui.FileTransfer(root)
-    schema.createDb()
-    root.mainloop()
+    FT = gui.FileTransfer(root) # main app GUI
+    schema.createDb() # create / init SQLite objects
+    root.mainloop() # run app
 
 if __name__ == '__main__': main()
