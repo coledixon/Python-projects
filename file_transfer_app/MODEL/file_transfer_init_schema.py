@@ -1,9 +1,11 @@
 import sqlite3 as sql
 
-conn = sql.connect('file_transfer.db')
-c = conn.cursor()
+def createDb():
+    conn = sql.connect('file_transfer.db')
+    c = conn.cursor()
+    initSchema(c)
 
-def initSchema():
+def initSchema(c):
     c.execute("DROP TABLE IF EXISTS Program")
     c.execute("CREATE TABLE Program (ProgramID INT not null,"
               "ProgramName TEXT not null,"
@@ -26,6 +28,3 @@ def initSchema():
               "TransferID INT not null,"
               "FOREIGN KEY (Path) REFERENCES FileInfo(Path) "
               "FOREIGN KEY (TransferID) REFERENCES Transfer(TransferID))")
-
-
-initSchema()
