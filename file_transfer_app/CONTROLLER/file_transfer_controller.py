@@ -17,7 +17,7 @@ def transfer_(self):
     res = evalPaths_(path, dest)
     if res != False:
         shutil.copy(path, dest)
-        self.clear_()
+        clear_(self)
         mb.showinfo(title='FILE TRANSFER', message='File transferred to %s' %dest)
 
 def browseRoot_(self):
