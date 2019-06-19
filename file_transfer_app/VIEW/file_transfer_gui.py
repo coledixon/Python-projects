@@ -48,10 +48,10 @@ class FileTransfer:
         self.comments.grid(row = 4, column = 0, columnspan = 2)
 
         #BUTTONS
-        self.browse = ttk.Button(self.content, text = 'BROWSE')
-        self.browse.grid(row = 2, column = 0, sticky = 'nw', padx = 5, pady = 4)
-        self.browse2 = ttk.Button(self.content, text = 'BROWSE')
-        self.browse2.grid(row = 2, column = 1, sticky = 'nw', padx = 5, pady = 4)
+        self.btnRoot = ttk.Button(self.content, text = 'BROWSE')
+        self.btnRoot.grid(row = 2, column = 0, sticky = 'nw', padx = 5, pady = 4)
+        self.btnDest = ttk.Button(self.content, text = 'BROWSE')
+        self.btnDest.grid(row = 2, column = 1, sticky = 'nw', padx = 5, pady = 4)
         self.clear = ttk.Button(self.content, text = 'CLEAR')
         self.clear.grid(row = 5, column = 0, sticky = 'sw',pady = 5, padx = 5)
         self.transfer = ttk.Button(self.content, text = 'TRANSFER')
@@ -66,5 +66,5 @@ class FileTransfer:
         #BIND EVENTS
         self.transfer.bind('<1>', lambda e: ctrl.transfer_(self))
         self.clear.bind('<1>', lambda e: ctrl.clear_(self))
-        self.browse.bind('<1>', lambda e: ctrl.browseRoot_(self))
-        self.browse2.bind('<1>', lambda e: ctrl.browseDest_(self))
+        self.btnRoot.bind('<1>', lambda e: ctrl.browseRoot_(self))
+        self.btnDest.bind('<1>', lambda e: ctrl.browseDest_(self))
