@@ -4,7 +4,7 @@ import shutil, os
 import sqlite3 as sql
 import datetime, time
 # CUSTOM SCRIPTS
-# from MODEL import file_transfer_data as data
+from MODEL import file_transfer_data as data
 
 #DEFINE GLOBALS
 global path
@@ -17,6 +17,7 @@ def transfer_(self):
     res = evalPaths_(path, dest)
     if res != False:
         shutil.copy(path, dest)
+        data.insertTran_(self, path, dest, os, datetime, time)
         clear_(self)
         mb.showinfo(title='FILE TRANSFER', message='File transferred to %s' %dest)
 

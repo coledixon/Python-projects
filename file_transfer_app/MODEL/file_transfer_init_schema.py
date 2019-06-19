@@ -1,11 +1,14 @@
 import sqlite3 as sql
 
+# create database in SQLite3
 def createDb():
     conn = sql.connect('file_transfer.db')
     c = conn.cursor()
-    initSchema(c)
+    initSchema(c) # pass cursor to initSchema()
 
+# init SQLite3 db objects
 def initSchema(c):
+    # utilizing DROP / CREATE for unit testing
     c.execute("DROP TABLE IF EXISTS Program")
     c.execute("CREATE TABLE Program (ProgramID INT not null,"
               "ProgramName TEXT not null,"
