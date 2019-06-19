@@ -52,11 +52,11 @@ class FileTransfer:
         self.btnRoot.grid(row = 2, column = 0, sticky = 'nw', padx = 5, pady = 4)
         self.btnDest = ttk.Button(self.content, text = 'BROWSE')
         self.btnDest.grid(row = 2, column = 1, sticky = 'nw', padx = 5, pady = 4)
-        self.clear = ttk.Button(self.content, text = 'CLEAR')
-        self.clear.grid(row = 5, column = 0, sticky = 'sw',pady = 5, padx = 5)
-        self.transfer = ttk.Button(self.content, text = 'TRANSFER')
-        self.transfer.grid(row = 5, column = 1, sticky = 'ne', padx = 84, pady = 5)
-        self.cancel = ttk.Button(self.content, text = 'CANCEL', command = quit).grid(row = 5, column = 1, sticky = 'ne', pady = 5, padx = 5)
+        self.btnClear = ttk.Button(self.content, text = 'CLEAR')
+        self.btnClear.grid(row = 5, column = 0, sticky = 'sw',pady = 5, padx = 5)
+        self.btnTransfer = ttk.Button(self.content, text = 'TRANSFER')
+        self.btnTransfer.grid(row = 5, column = 1, sticky = 'ne', padx = 64, pady = 5) #84
+        self.btnCancel = ttk.Button(self.content, text = 'CANCEL', command = quit).grid(row = 5, column = 1, sticky = 'ne', pady = 5, padx = 5)
 
         #PROGRESS BAR
         value = IntVar()
@@ -64,7 +64,7 @@ class FileTransfer:
         #self.prog.grid(row = 4, column = 1)
 
         #BIND EVENTS
-        self.transfer.bind('<1>', lambda e: ctrl.transfer_(self))
-        self.clear.bind('<1>', lambda e: ctrl.clear_(self))
+        self.btnTransfer.bind('<1>', lambda e: ctrl.transfer_(self))
+        self.btnClear.bind('<1>', lambda e: ctrl.clear_(self))
         self.btnRoot.bind('<1>', lambda e: ctrl.browseRoot_(self))
         self.btnDest.bind('<1>', lambda e: ctrl.browseDest_(self))
